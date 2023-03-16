@@ -72,9 +72,8 @@ export default function Step6() {
               maxLength={5}
               placeholder="Postleitzahl"
               id="postle"
-              className={`${
-                err ? " border-red-700 " : " border-[#1D1D1B] "
-              }border rounded-sm  placeholder-[#1D1D1B] outline-none px-4 py-3 md:w-auto`}
+              className={`${err ? " border-red-700 " : " border-[#1D1D1B] "
+                }border rounded-sm  placeholder-[#1D1D1B] outline-none px-4 py-3 md:w-auto`}
               value={data ? data : ""}
               onKeyDown={(evt) => {
                 (evt.key === "." || evt.key === "e") && evt.preventDefault();
@@ -106,7 +105,7 @@ export default function Step6() {
                   setStep(step + 1);
                 }
               }}
-              className="text-white bg-green-1 font-roboto rounded-md py-2.5 w-44 text-center font-semibold hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be]">
+              className="text-white bg-green-1 font-roboto rounded-md py-2.5 w-44 text-center font-semibold hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f]">
               Weiter
             </div>
           </div>

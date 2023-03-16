@@ -1,6 +1,6 @@
 .circle[data-active="true"] {
-  border: 1px solid #0273b2;
-  background-color: #0273b2;
+  border: 1px solid #59565D;
+  background-color: #59565D;
 }
 
 .circle[data-active="true"] .numero {
@@ -19,7 +19,7 @@
   content: "";
   position: absolute;
   height: 0.25rem;
-  background-color: #0273b2;
+  background-color: #59565D;
   bottom: -2px;
   left: 0;
   width: 6.5rem;
@@ -77,8 +77,8 @@ input[type="number"] {
 
 /* When the checkbox is checked, add a blue background */
 .container_check input:checked ~ .checkmark {
-  background-color: #0273b2;
-  border: #0273b2 1px solid;
+  background-color: #59565D;
+  border: #59565D 1px solid;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -194,7 +194,7 @@ input[type="number"] {
   top: 1px;
   width: 8px;
   height: 14px;
-  border: solid #0273b2;
+  border: solid #59565D;
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -213,7 +213,7 @@ input[type="number"] {
   height: 18px;
   left: 0;
   bottom: 0;
-  background-color: #317ea8;
+  background-color: #59565D;
 }
 
 @media (max-width: 567px) {

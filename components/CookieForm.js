@@ -86,14 +86,12 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
 
   return (
     <div
-      className={`md:min-h-screen overflow-auto h-screen fixed bg-black bg-opacity-60 w-full flex items-center  py-1 ${
-        cancel ? " justify-start " : " justify-center "
-      } ${clases(show)}`}
+      className={`md:min-h-screen overflow-auto h-screen fixed bg-black bg-opacity-60 w-full flex items-center  py-1 ${cancel ? " justify-start " : " justify-center "
+        } ${clases(show)}`}
       style={{ zIndex: "9999" }}>
       <div
-        className={`bg-white rounded-md px-7 text-[#797980] pt-8 pb-1 lg:max-w-[40rem] md:w-[40rem] w-full${
-          cancel ? " hidden " : " block "
-        }`}>
+        className={`bg-white rounded-md px-7 text-[#797980] pt-8 pb-1 lg:max-w-[40rem] md:w-[40rem] w-full${cancel ? " hidden " : " block "
+          }`}>
         <p className="lg:text-sm md:text-base text-sm">
           Für unseren Service speichern wir Cookies und andere Informationen auf
           Ihren Geräten und verarbeiten damit einhergehend Ihre personenbezogene
@@ -131,9 +129,8 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
       </div>
 
       <div
-        className={`min-h-screen bg-white relative rounded-md lg:w-[40rem] overflow-auto ${
-          cancel ? " block " : " hidden"
-        }`}>
+        className={`min-h-screen bg-white relative rounded-md lg:w-[40rem] overflow-auto ${cancel ? " block " : " hidden"
+          }`}>
         <div className="p-7 ">
           <div>
             <div className="flex justify-between">
@@ -174,31 +171,28 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                 onClick={() => {
                   setActive(0);
                 }}
-                className={`pb-1 hover:cursor-pointer w-1/2 text-center ${
-                  active == 0
+                className={`pb-1 hover:cursor-pointer w-1/2 text-center ${active == 0
                     ? " text-green-1 font-bold border-green-1 border-b-2 "
                     : " border-b border-opacity-10 border-black"
-                }`}>
+                  }`}>
                 Kategorien
               </div>
               <div
                 onClick={() => {
                   setActive(1);
                 }}
-                className={`pb-1 hover:cursor-pointer w-1/2 text-center  ${
-                  active == 1
+                className={`pb-1 hover:cursor-pointer w-1/2 text-center  ${active == 1
                     ? " text-green-1 font-bold border-green-1 border-b-2 "
                     : " border-b border-opacity-10 border-black"
-                }`}>
+                  }`}>
                 Services
               </div>
             </div>
             <div
-              className={` text-[#797980] mt-4 space-y-4 h-[49vh] overflow-auto ${
-                active == 0
+              className={` text-[#797980] mt-4 space-y-4 h-[49vh] overflow-auto ${active == 0
                   ? "relative opacity-100 block"
                   : " absolute opacity-0 hidden"
-              }`}>
+                }`}>
               <div className="w-full md:text-base lg:text-sm">
                 <div
                   onClick={() => {
@@ -228,7 +222,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>
@@ -300,7 +294,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>
@@ -384,11 +378,10 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
               </div>
             </div>
             <div
-              className={` text-[#797980] mt-4 px-2 space-y-4  h-[49vh] overflow-auto ${
-                active == 1
+              className={` text-[#797980] mt-4 px-2 space-y-4  h-[49vh] overflow-auto ${active == 1
                   ? "relative opacity-100 block"
                   : " absolute opacity-0 hidden"
-              }`}>
+                }`}>
               {/* <div className="w-full lg:text-sm md:text-base text-sm">
                 <div className="hover:cursor-pointer border items-center  border-black border-opacity-10 rounded-md p-4 py-2">
                   <div className="w-full">
@@ -455,7 +448,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>
@@ -524,7 +517,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>
@@ -593,7 +586,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>
@@ -662,7 +655,7 @@ export default function CookieForm({ show, setShow, cancel, setCancel }) {
                                 <path
                                   d="M30.0094932,-0.5 C32.8534346,-0.5 35.4330697,0.632406246 37.3226603,2.47154687 C39.2173227,4.31562389 40.4181217,6.87029149 40.4959736,9.70631513 C40.4981622,12.7440885 39.3375699,15.4233885 37.4620437,17.3539966 C35.5609243,19.3109495 32.9241909,20.5 30.0094932,20.5 L30.0094932,20.5 L9.99050677,20.5 C7.14626154,20.5 4.56639324,19.3679366 2.67675543,17.5287725 C0.782448937,15.6850644 -0.418130086,13.1306858 -0.49597372,10.2937978 C-0.498162151,7.25597731 0.662425032,4.576654 2.53794226,2.64603293 C4.43906304,0.689056047 7.07580212,-0.5 9.99050677,-0.5 L9.99050677,-0.5 Z"
                                   stroke="#ffffff"
-                                  fill="#0273B2"></path>
+                                  fill="#59565D"></path>
                                 <path
                                   d="M30,18 C34.418278,18 38,14.418278 38,10 C38,5.581722 34.418278,2 30,2 C25.581722,2 22,5.581722 22,10 C22,14.418278 25.581722,18 30,18 Z"
                                   fill="#ffffff"></path>

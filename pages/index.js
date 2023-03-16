@@ -197,11 +197,10 @@ export default function Home() {
       <NavTop />
       <Header />
       <div
-        className={`grid lg:grid-cols-[70%_30%] ${
-          step == 8
+        className={`grid lg:grid-cols-[70%_30%] ${step == 8
             ? " lg:min-h-[77.5vh]"
             : " lg:h-[77.5vh] lg:overflow-y-hidden"
-        } overflow-hidden`}>
+          } overflow-hidden`}>
         <div className="lg:px-16 lg:py-6 lg:pb-0 md:pt-10 relative ">
           <div>
             <div className="font-visby reltive lg:px-0 px-6 md:py-0 py-6 flex justify-between items-center">
@@ -277,7 +276,7 @@ export default function Home() {
               setStep(step - 1);
             }}
             data-show={step != 0 && step != 10 && step != 8 ? true : false}
-            className={`bg-green-1 mb-4 mt-4 mx-6 lg:hidden lg:opacity-0 md:mt-8 z-50 backButtonM relative group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] flex justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
+            className={`bg-green-1 mb-4 mt-4 mx-6 lg:hidden lg:opacity-0 md:mt-8 z-50 backButtonM relative group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] flex justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
             <span className="w-3 group-hover:-translate-x-[0.18rem] transition-all ease-in-out duration-150">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                 <path
@@ -288,9 +287,8 @@ export default function Home() {
             </span>
           </div>
           <div
-            className={`w-full lg:absolute relative bg-[#EFEFEF] lg:left-0 lg:bottom-0 lg:mt-0 md:mt-10 mt-6 ${
-              isShow() ? " block " : " hidden "
-            }`}>
+            className={`w-full lg:absolute relative bg-[#EFEFEF] lg:left-0 lg:bottom-0 lg:mt-0 md:mt-10 mt-6 ${isShow() ? " block " : " hidden "
+              }`}>
             <div className="text-[#8C8C8C] lg:px-20 md:px-6 lg:py-3 py-3 px-6">
               <div className="flex mb-4 items-start space-x-2">
                 <img src="/images/help.svg" alt="" className="mt-1.5" />
@@ -307,9 +305,8 @@ export default function Home() {
               setStep(step - 1);
             }}
             data-show={step != 0 && step != 10 && step != 7 && step != 8}
-            className={`bg-green-1 lg:absolute lg:flex hidden ${
-              step == 9 ? "bottom-[50px]" : "bottom-[120px]"
-            } right-4 backButton group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
+            className={`bg-green-1 lg:absolute lg:flex hidden ${step == 9 ? "bottom-[50px]" : "bottom-[120px]"
+              } right-4 backButton group hover:cursor-pointer  transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] justify-center items-center space-x-3 font-roboto rounded-md py-2.5 md:w-32 w-10 text-white text-center`}>
             <span className="w-3 group-hover:-translate-x-1 transition-all ease-in-out duration-150">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                 <path
@@ -325,11 +322,10 @@ export default function Home() {
           </div>
         </div>
         <div
-          className={`overflow-hidden lg:block hidden ${
-            step < 10
+          className={`overflow-hidden lg:block hidden ${step < 10
               ? "bg-[url('/images/house.webp')]"
               : "bg-[url('/images/peoples.webp')]"
-          } bg-center bg-cover bg-no-repeat`}>
+            } bg-center bg-cover bg-no-repeat`}>
           <div className="relative">
             {/* <img
               src="/images/house.webp"

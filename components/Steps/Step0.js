@@ -25,7 +25,7 @@ export default function Step0({ openlg, setOpenlg, openM, setOpenM }) {
             onClick={() => {
               setStep(step + 1);
             }}
-            className="bg-green-1 px-5 py-3 rounded-md hover:cursor-pointer text-[#F1C88B] transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] font-bold lg:text-base text-sm">
+            className="bg-green-1 px-5 py-3 rounded-md hover:cursor-pointer text-[#FFF] transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] font-bold lg:text-base text-sm">
             GRATIS ANFRAGE STARTEN
           </div>
         </div>
@@ -110,9 +110,8 @@ export default function Step0({ openlg, setOpenlg, openM, setOpenM }) {
           </svg>
         </div>
         <div
-          className={`${
-            openM ? " flex h-[33.5rem] opacity-100" : " h-0 opacity-0"
-          } flex-col md:space-x-5 md:space-y-0 space-y-5 md:items-center overflow-hidden transition-all ease-linear duration-500`}>
+          className={`${openM ? " flex h-[33.5rem] opacity-100" : " h-0 opacity-0"
+            } flex-col md:space-x-5 md:space-y-0 space-y-5 md:items-center overflow-hidden transition-all ease-linear duration-500`}>
           <div>
             <img
               src="/images/graph.png"

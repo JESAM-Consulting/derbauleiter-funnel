@@ -69,8 +69,8 @@ export default function Step8() {
         "Ihr produzierter Solarstrom im Jahr",
         Math.round(
           ((data * 1.3) / 1000 / 0.38) *
-            0.4 *
-            (userData.step6 ? getNumber(userData.step6) : 0)
+          0.4 *
+          (userData.step6 ? getNumber(userData.step6) : 0)
         )
       );
   }
@@ -138,8 +138,8 @@ export default function Step8() {
       if (userData.step7.distance) {
         setData(
           parseInt(userData.step2.consumo) +
-            parseInt(userData.step7.suma) +
-            (20 * parseInt(userData.step7.distance)) / 100
+          parseInt(userData.step7.suma) +
+          (20 * parseInt(userData.step7.distance)) / 100
         );
       } else if (!userData.step7.distance) {
         setData(
@@ -170,8 +170,8 @@ export default function Step8() {
             <p className="text-sm">
               {Math.round(
                 ((data * 1.3) / 1000 / 0.38) *
-                  0.4 *
-                  (userData.step6 ? getNumber(userData.step6) : 0)
+                0.4 *
+                (userData.step6 ? getNumber(userData.step6) : 0)
               )}{" "}
               kWh
             </p>
@@ -209,7 +209,7 @@ export default function Step8() {
               onClick={() => {
                 setStep(step - 1);
               }}
-              className="font-bold font-roboto px-10 py-2 border-[#0e4e70] border rounded-md text-[#0e4e70] hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] hover:bg-green-1 hover:text-white">
+              className="font-bold font-roboto px-10 py-2 border-[#59565D] border rounded-md text-[#59565D] hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] hover:bg-green-1 hover:text-white">
               Zurück
             </div>
             <div
@@ -225,7 +225,7 @@ export default function Step8() {
 
                 setStep(step + 1);
               }}
-              className="font-bold font-roboto px-10 py-2 border-green-1 border rounded-md bg-green-1 text-white hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] hover:text-green-1 hover:bg-white">
+              className="font-bold font-roboto px-10 py-2 border-green-1 border rounded-md bg-green-1 text-white hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] hover:text-green-1 hover:bg-white">
               Weiter
             </div>
           </div>
@@ -426,7 +426,7 @@ export default function Step8() {
               onClick={() => {
                 setStep(step - 1);
               }}
-              className="font-bold font-roboto px-10 py-2 border-[#737F38] border rounded-md text-[#737F38] hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] hover:bg-green-1 hover:text-white">
+              className="font-bold font-roboto px-10 py-2 border-[#737F38] border rounded-md text-[#737F38] hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] hover:bg-green-1 hover:text-white">
               Zurück
             </div>
             <div
@@ -442,7 +442,7 @@ export default function Step8() {
 
                 setStep(step + 1);
               }}
-              className="font-bold font-roboto px-10 py-2 border-green-1 border rounded-md bg-green-1 text-white hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#0274b2be] hover:text-green-1 hover:bg-white">
+              className="font-bold font-roboto px-10 py-2 border-green-1 border rounded-md bg-green-1 text-white hover:cursor-pointer transition-all ease-in-out duration-150 hover:bg-opacity-90 hover:shadow-md hover:shadow-[#59565d8f] hover:text-green-1 hover:bg-white">
               Weiter
             </div>
           </div> */}
